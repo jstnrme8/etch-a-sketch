@@ -9,7 +9,6 @@ div {
 
 #container {
     display: grid;
-   
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
@@ -18,4 +17,8 @@ div {
     padding: 1em;
     border: 1px solid #ddd;
     text-align: center;
+}
+
+.color-change {
+    background-color: rgb(0, 0, 0);
 }

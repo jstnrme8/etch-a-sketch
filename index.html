@@ -23,8 +23,18 @@
             let cell = document.createElement('div');
             //cell.innerText = (i + 1);
             container.appendChild(cell).className = "grid-item";
+            cell.setAttribute("id", i+1);
+            cell.addEventListener('mouseover', e => e.target.classList.add('color-change'));
         };
     };
+
+    // document.querySelectorAll('wdiv.grid-item').forEach(occurence => {
+    //     occurence.addEventListener('click', (e) => {
+    //         let element = e.target.id;
+
+    //         element.style.backgroundColor = "black";
+    //     })
+    // })
 
     makeRows(16, 16);
 </script>
